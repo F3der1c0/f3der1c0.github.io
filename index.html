@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylemq.css" />
+    <title>PortfolioPersonale</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="#home" class="logo">Marco<span>Rossi</span></a>
+      <nav>
+        <ul class="nav-link">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#chisono">Chi Sono</a></li>
+          <li><a href="#progetti">Progetti</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <span class="badge">Disponibile per nuovi progetti</span>
+        <h1>Progetto esperienze web semplici, veloci e memorabili.</h1>
+        <p>
+          Ciao! Sono un Web Designer & Front-End Developer. Aiuto aziende e
+          professionisti a costruire la loro presenza digitale con codice pulito
+          e design minimalista.
+        </p>
+        <a href="#progetti" class="btn-primary">Guarda i miei lavori</a>
+      </div>
+    </section>
+    <section id="chisono">
+      <div class="section-header">
+        <h2>Chi Sono</h2>
+        <p>Passione per il dettaglio, ossessione per la semplicità.</p>
+      </div>
+      <div class="about-content">
+        <p>
+          Credo che il miglior design sia quello che non si fa notare, ma che
+          guida l'utente in modo naturale verso il suo obiettivo. Con oltre 5
+          anni di esperienza nello sviluppo web, trasformo idee complesse in
+          interfacce pulite e accessibili su qualsiasi dispositivo.
+        </p>
+        <p>
+          Quando non scrivo codice HTML e CSS, amo studiare tipografia,
+          fotografare architetture minimaliste e sperimentare nuove tecnologie
+          web.
+        </p>
+      </div>
+    </section>
+
+    <section id="progetti" class="bg-alt">
+      <div class="section-header">
+        <h2>Progetti Selezionati</h2>
+        <p>Una raccolta dei miei lavori più recenti realizzati su misura.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Card 1 -->
+        <article class="project-card">
+          <div class="card-banner">01. Studio Architettura</div>
+          <div class="card-body">
+            <span class="card-tag">Web Design &bull; HTML/CSS</span>
+            <h3>Spazio Minimal</h3>
+            <p>
+              Sito portfolio per uno studio di architettura milanese. Focus su
+              grandi immagini, griglie asimmetriche e tempi di caricamento
+              istantanei.
+            </p>
+            <a href="#contatti" class="card-link">Richiedi dettagli &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="project-card">
+          <div class="card-banner">02. App Finanziaria</div>
+          <div class="card-body">
+            <span class="card-tag">UI/UX &bull; Landing Page</span>
+            <h3>NovaPay Italia</h3>
+            <p>
+              Landing page ad alta conversione per una startup fintech.
+              Struttura chiara, gerarchia visiva studiata e perfetta leggibilità
+              da mobile.
+            </p>
+            <a href="#contatti" class="card-link">Richiedi dettagli &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="project-card">
+          <div class="card-banner">03. E-Commerce Artigianale</div>
+          <div class="card-body">
+            <span class="card-tag">E-Commerce &bull; Branding</span>
+            <h3>Bottega Botanica</h3>
+            <p>
+              Vetrina digitale per un marchio di cosmetici naturali. Colori
+              rilassanti, navigazione intuitiva e schede prodotto essenziali.
+            </p>
+            <a href="#contatti" class="card-link">Richiedi dettagli &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contatti">
+      <div class="section-header">
+        <h2>Lavoriamo Insieme</h2>
+        <p>
+          Hai un progetto in mente o vuoi semplicemente salutarmi? Scrivimi qui
+          sotto.
+        </p>
+      </div>
+
+      <div class="contact-container">
+        <form
+          onsubmit="
+            event.preventDefault();
+            document.getElementById('msg-conferma').style.display = 'block';
+            this.reset();
+          "
+        >
+          <div class="form-group">
+            <label for="nome">Il tuo Nome</label>
+            <input
+              type="text"
+              id="nome"
+              class="form-control"
+              placeholder="Es. Marco Rossi"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">La tua Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="rossimarco@esempio.it"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="messaggio">Messaggio</label>
+            <textarea
+              id="messaggio"
+              class="form-control"
+              placeholder="Raccontami brevemente la tua idea..."
+              autocomplete="off"
+              required
+            ></textarea>
+          </div>
+
+          <div class="contact-actions">
+            <button type="submit" class="btn-primary">Invia Messaggio</button>
+            <a href="mailto:ciao@marcorossi.it" class="btn-secondary"
+              >Oppure scrivimi via Email diretta</a
+            >
+          </div>
+
+          <div id="msg-conferma" class="feedback-msg">
+            Grazie! Il tuo messaggio è stato inviato con successo.
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2026 <strong>Marco Rossi</strong>. Tutti i diritti riservati.
+        Realizzato con HTML &amp; CSS pulito.
+      </p>
+    </footer>
+  </body>
+</html>

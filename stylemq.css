@@ -1,0 +1,31 @@
+@media (max-width: 960px) {
+  .hero {
+    padding: 100px 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 70px 50px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar a {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .navbar {
+    padding: 20px 30px 20px 30px;
+  }
+}
